@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Paragraph extends Element {
     private static int counter = 1;
     private final int number;
-    private ArrayList<Element> elements;
+    private final ArrayList<Element> elements = new ArrayList<>();
 
     public Paragraph() {
         number = counter++;
@@ -18,11 +18,11 @@ public class Paragraph extends Element {
 
     @Override
     public void print() {
-        System.out.println("<p"+number+">");
+        System.out.println("<p" + number + ">");
         for (Element e : elements) {
-            e.print();
+            if (e != null) e.print();
         }
-        System.out.println("</p"+number+">");
+        System.out.println("</p" + number + ">");
     }
 
     @Override
