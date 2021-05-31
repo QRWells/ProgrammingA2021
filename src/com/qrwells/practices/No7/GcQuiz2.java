@@ -42,7 +42,7 @@ public class GcQuiz2 {
         a[0] = new X("う");
         a[1] = new Y("え", a[0]);
         a[2] = new Y("お", new X("か"));
-        if (new X("き") == new X("き")) {
+        if (new X("1き") == new X("2き")) {
             a[2] = new X("く");
         } else {
             a[2] = a[1];
@@ -53,5 +53,6 @@ public class GcQuiz2 {
         a[1] = null;
         System.gc();
         // ※この時点
+        Thread.sleep(2000);
     }
 }

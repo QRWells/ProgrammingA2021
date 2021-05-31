@@ -1,7 +1,5 @@
 package com.qrwells.homeworks.No7;
 
-import com.qrwells.practices.No7.OriginalException;
-
 public class ExceptionHomework {
 
     static int number(String s) throws OriginalException {
