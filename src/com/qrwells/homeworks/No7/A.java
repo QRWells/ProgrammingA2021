@@ -7,8 +7,8 @@ package com.qrwells.homeworks.No7;
 
 public class A {
     private static int counter;
-    public A()
-    {
+
+    public A() {
         counter++;
     }
 
@@ -16,8 +16,7 @@ public class A {
         return counter;
     }
 
-    public String m()
-    {
+    public String m() {
         return "a";
     }
 }

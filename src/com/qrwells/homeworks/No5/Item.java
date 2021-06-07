@@ -17,13 +17,12 @@ public class Item {
         instanceNum++;
     }
 
-    public static int getNumberOfInstances()
-    {
+    public static int getNumberOfInstances() {
         return instanceNum;
     }
 
     @Override
     public String toString() {
-        return name + ", " +price;
+        return name + ", " + price;
     }
 }

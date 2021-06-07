@@ -19,7 +19,7 @@ public class ExceptionHomework {
             System.out.println(number("10"));
             System.out.println(number("XXXXXXXXX"));
         } catch (OriginalException e) {
-			System.out.println(e.getMessage());
+            System.out.println(e.getMessage());
         }
     }
 

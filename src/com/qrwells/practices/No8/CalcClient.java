@@ -1,5 +1,7 @@
 package com.qrwells.practices.No8;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class CalcClient extends Thread {
     Calc calc = null;
 

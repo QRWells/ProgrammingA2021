@@ -3,10 +3,14 @@
  * Licensed under the MIT license. See LICENSE file in the project root for full license information.
  */
 
-package com.qrwells.homeworks.No6;
+package com.qrwells.homeworks.No8.Access;
 
-public abstract class Figure {
-    public abstract String draw();
+public class Access2 extends Access {
+    public Access2() {
+        super(null);
+    }
 
-    public abstract void move(int mx, int my);
+    public void s() {
+
+    }
 }

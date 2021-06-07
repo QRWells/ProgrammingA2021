@@ -7,6 +7,7 @@ package com.qrwells.homeworks.No7;
 
 public class B extends A {
     private final A a;
+
     public B(A a) {
         this.a = a;
     }

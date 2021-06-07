@@ -18,12 +18,12 @@ public class Line extends Figure {
 
     @Override
     public String draw() {
-        return "("+start.draw()+","+end.draw()+")";
+        return "(" + start.draw() + "," + end.draw() + ")";
     }
 
     @Override
     public void move(int mx, int my) {
-        start.move(mx,my);
-        end.move(mx,my);
+        start.move(mx, my);
+        end.move(mx, my);
     }
 }

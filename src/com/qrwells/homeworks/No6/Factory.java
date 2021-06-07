@@ -12,7 +12,7 @@ public class Factory {
         this.name = name;
     }
 
-    public String produce(){
+    public String produce() {
         return null;
     }
 }

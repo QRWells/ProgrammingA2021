@@ -4,14 +4,14 @@ package com.qrwells.homeworks.No6;/*
  */
 
 class FactoryTest {
-	public static void main(String[] args) {
-		Factory[] factories = new Factory[] {
-			new BikeFactory(), 
-			new CarFactory(), 
-			new CarFactory()
-		};
-		for (Factory factory : factories) {
-			System.out.println(factory.name + "の" + factory.produce());
-		}
-	}
+    public static void main(String[] args) {
+        Factory[] factories = new Factory[]{
+                new BikeFactory(),
+                new CarFactory(),
+                new CarFactory()
+        };
+        for (Factory factory : factories) {
+            System.out.println(factory.name + "の" + factory.produce());
+        }
+    }
 }

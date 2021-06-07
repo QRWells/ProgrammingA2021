@@ -5,9 +5,8 @@
 
 package com.qrwells.homeworks.No7;
 
-public class OriginalException extends Exception{
-    public OriginalException()
-    {
+public class OriginalException extends Exception {
+    public OriginalException() {
 
     }
 
