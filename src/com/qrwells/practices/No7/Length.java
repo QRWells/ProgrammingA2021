@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) Wang Qirui. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root for full license information.
+ */
+
 package com.qrwells.practices.No7;
 
 import java.util.regex.Pattern;
@@ -41,8 +46,8 @@ public class Length {
     }
 
     public static void print(char[] data) {
-        for (int i = 0; i < data.length; i++) {
-            System.out.print(data[i]);
+        for (char datum : data) {
+            System.out.print(datum);
         }
         System.out.println();
     }

@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) Wang Qirui. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root for full license information.
+ */
+
 package com.qrwells.homeworks.No9;/*
  * Copyright (c) Wang Qirui. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project root for full license information.
@@ -22,6 +27,7 @@ public class WriterThread extends Thread {
                 Thread.sleep(random.nextInt(3000));
             }
         } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 }

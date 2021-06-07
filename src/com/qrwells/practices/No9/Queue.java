@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) Wang Qirui. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root for full license information.
+ */
+
 package com.qrwells.practices.No9;
 
 public class Queue {
@@ -6,7 +11,7 @@ public class Queue {
     private int last = 0;
 
     public Queue(int size) {
-        values = new int[size+1];
+        values = new int[size + 1];
     }
 
     public void enqueue(int data) {
@@ -17,7 +22,7 @@ public class Queue {
     }
 
     public int dequeue() {
-        if(isEmpty()) throw new RuntimeException();
+        if (isEmpty()) throw new RuntimeException();
         int data = values[first];
         first = (first + 1) % values.length;
         System.out.println("Dequeue: " + data);
@@ -34,7 +39,7 @@ public class Queue {
 
     public static void main(String[] args) {
         Queue q = new Queue(3);
-        for(int i = 0; !q.isFull(); i++) q.enqueue(i);
+        for (int i = 0; !q.isFull(); i++) q.enqueue(i);
         q.dequeue();
         q.enqueue(4);
         q.dequeue();

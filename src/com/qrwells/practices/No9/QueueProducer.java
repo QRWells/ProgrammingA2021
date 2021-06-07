@@ -1,17 +1,21 @@
+/*
+ * Copyright (c) Wang Qirui. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root for full license information.
+ */
+
 package com.qrwells.practices.No9;
 
 class QueueProducer extends Thread {
     Queue queue = null;
+
     QueueProducer(Queue q) {
         queue = q;
     }
 
     public void run() {
         for (int i = 0; i < 30; i++) {
-            synchronized (queue)
-            {
-                while (queue.isFull())
-                {
+            synchronized (queue) {
+                while (queue.isFull()) {
                     try {
                         queue.wait();
                     } catch (InterruptedException e) {
@@ -28,7 +32,7 @@ class QueueProducer extends Thread {
 
     void sleepRandomly() {
         try {
-            int n = (int)(Math.random() * 1000);
+            int n = (int) (Math.random() * 1000);
             Thread.sleep(n);
         } catch (InterruptedException e) {
             e.printStackTrace();

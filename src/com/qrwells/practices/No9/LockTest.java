@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) Wang Qirui. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root for full license information.
+ */
+
 package com.qrwells.practices.No9;
 
 class X {
@@ -15,8 +20,8 @@ class Y {
 }
 
 class ThreadA extends Thread {
-    X x;
-    Y y;
+    final X x;
+    final Y y;
 
     ThreadA(X x, Y y) {
         this.x = x;
@@ -40,8 +45,8 @@ class ThreadA extends Thread {
 }
 
 class ThreadB extends Thread {
-    X x;
-    Y y;
+    final X x;
+    final Y y;
 
     ThreadB(X x, Y y) {
         this.x = x;
@@ -51,11 +56,11 @@ class ThreadB extends Thread {
     public void run() {
         for (int i = 0; i < 10; i++) {
             try {
-                synchronized (y) {
-                    y.doY(i);
-                }
                 synchronized (x) {
                     x.doX(i);
+                }
+                synchronized (y) {
+                    y.doY(i);
                 }
             } catch (InterruptedException ie) {
                 ie.printStackTrace();

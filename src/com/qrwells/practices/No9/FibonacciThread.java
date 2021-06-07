@@ -1,7 +1,9 @@
-package com.qrwells.practices.No9;/*
+/*
  * Copyright (c) Wang Qirui. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project root for full license information.
  */
+
+package com.qrwells.practices.No9;
 
 import java.util.ArrayList;
 
@@ -34,8 +36,7 @@ public class FibonacciThread extends Thread {
             for (FibonacciThread t : ts) {
                 t.join();
             }
-        }catch (InterruptedException e)
-        {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
