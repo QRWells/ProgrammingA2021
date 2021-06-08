@@ -5,8 +5,6 @@
 
 package com.qrwells.practices.No7;
 
-import java.net.http.HttpClient;
-
 class X {
     String info = null;
     X x = null;

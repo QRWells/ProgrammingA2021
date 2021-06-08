@@ -6,7 +6,7 @@
 package com.qrwells.practices.No9;
 
 class QueueConsumer extends Thread {
-    Queue queue = null;
+    final Queue queue;
 
     QueueConsumer(Queue q) {
         queue = q;

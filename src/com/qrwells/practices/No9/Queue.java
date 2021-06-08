@@ -6,7 +6,7 @@
 package com.qrwells.practices.No9;
 
 public class Queue {
-    private int[] values = null;
+    private final int[] values;
     private int first = 0;
     private int last = 0;
 
@@ -14,14 +14,14 @@ public class Queue {
         values = new int[size + 1];
     }
 
-    public void enqueue(int data) {
+    public synchronized void enqueue(int data) {
         if (isFull()) throw new RuntimeException();
         values[last] = data;
         last = (last + 1) % values.length;
         System.out.println("Enqueue: " + data);
     }
 
-    public int dequeue() {
+    public synchronized int dequeue() {
         if (isEmpty()) throw new RuntimeException();
         int data = values[first];
         first = (first + 1) % values.length;

@@ -6,7 +6,7 @@
 package com.qrwells.practices.No9;
 
 class QueueProducer extends Thread {
-    Queue queue = null;
+    final Queue queue;
 
     QueueProducer(Queue q) {
         queue = q;
