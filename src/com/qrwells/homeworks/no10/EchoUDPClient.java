@@ -17,11 +17,11 @@ public class EchoUDPClient {
             socket.setSoTimeout(5000);
             socket.send(outPacket);
             System.out.print("Client sent    : ");
-            System.out.write(outData);
+            System.out.write(outPacket.getData(),outPacket.getOffset(),outPacket.getLength());
             System.out.println();
             socket.receive(inPacket);
             System.out.print("Client received: ");
-            System.out.write(inData);
+            System.out.write(inPacket.getData(),inPacket.getOffset(),inPacket.getLength());
             System.out.println();
         } catch (Exception e) {
             System.out.println("Error: " + e);

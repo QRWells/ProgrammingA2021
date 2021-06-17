@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.SocketAddress;
-import java.util.Arrays;
 
 public class EchoUDPServer2 {
     public static void main(String[] args) {
@@ -21,25 +20,24 @@ public class EchoUDPServer2 {
                     inPacket = new DatagramPacket(inData, inData.length);
                     socket.receive(inPacket);
                     System.out.print(Thread.currentThread().getName() + " received: ");
-                    System.out.write(inData);
+                    System.out.write(inPacket.getData(), inPacket.getOffset(), inPacket.getLength());
                     System.out.println();
 
                     // Obtain socket address.
 
                     final SocketAddress inPacketSocketAddress = inPacket.getSocketAddress();
-                    var outData = inPacket.getData();
-
                     // Make Thread-Per-Message.
+                    DatagramPacket finalInPacket = inPacket;
                     new Thread(() -> {
                         try {
                             // Make DatagramPacket for output.
                             var outPacket = new DatagramPacket(
-                                    outData, outData.length, inPacketSocketAddress);
+                                    finalInPacket.getData(), finalInPacket.getLength(), inPacketSocketAddress);
                             // Send packet.
                             socket.send(outPacket);
                             // Print data sent.
                             System.out.print(Thread.currentThread().getName() + " sent: ");
-                            System.out.write(outData);
+                            System.out.write(outPacket.getData(), outPacket.getOffset(), outPacket.getLength());
                             System.out.println();
                         } catch (IOException se) {
                             se.printStackTrace(System.err);
