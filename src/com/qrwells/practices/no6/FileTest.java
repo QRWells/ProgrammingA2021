@@ -17,7 +17,7 @@ public class FileTest {
         System.out.println(d1.getSize());
         System.out.println(d1.getName());
         Directory d3 = new Directory("test");
-        for(int i = 0; i < 20; i++) {
+        for (int i = 0; i < 20; i++) {
             d3.add(new File("dummy" + i, 10));
         }
         System.out.println(d3.getSize());

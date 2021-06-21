@@ -5,13 +5,12 @@
 
 package com.qrwells.practices.no8.animal;
 
-public class Cat extends Animal{
-    private Cat()
-    {
+public class Cat extends Animal {
+    private Cat() {
 
     }
-    public static Cat getInstance()
-    {
+
+    public static Cat getInstance() {
         return new Cat();
     }
 

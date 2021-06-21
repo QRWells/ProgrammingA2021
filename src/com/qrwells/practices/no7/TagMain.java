@@ -17,10 +17,10 @@ public class TagMain {
             p1.add(t2);
             p2.add(t3);
             p1.add(p2);
-            while(true) {
+            while (true) {
                 p1.add(new Paragraph());
             }
-        } catch(RuntimeException re) {
+        } catch (RuntimeException re) {
             re.printStackTrace();
         }
         p1.print();

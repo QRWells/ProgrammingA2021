@@ -17,7 +17,7 @@ public class House {
         animals[2] = new Dog();
         animals[3] = Cat.getInstance();
         // animals[3] = new Cat();
-        for(int i = 0; i < animals.length; i++) {
+        for (int i = 0; i < animals.length; i++) {
             System.out.println(animals[i].say());
         }
     }

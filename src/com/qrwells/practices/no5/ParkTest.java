@@ -7,25 +7,22 @@ package com.qrwells.practices.no5;
 
 class ParkTest {
 
-    public static class Park{
+    public static class Park {
         private static String common;
         private String name;
 
-        public Park()
-        {
+        public Park() {
         }
 
         public static void setCommon(String common) {
             Park.common = common;
         }
 
-        public void setName(String name)
-        {
+        public void setName(String name) {
             this.name = name;
         }
 
-        public void print()
-        {
+        public void print() {
             System.out.println(name);
         }
     }

@@ -18,8 +18,7 @@ public class Student {
         return name;
     }
 
-    public boolean isOK()
-    {
+    public boolean isOK() {
         return credit >= 100;
     }
 }

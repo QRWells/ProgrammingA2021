@@ -15,7 +15,7 @@ class X {
 
     @Override
     protected void finalize() throws Throwable {
-        System.out.println("X"+ (info == null ? "" : info));
+        System.out.println("X" + (info == null ? "" : info));
         super.finalize();
     }
 }
@@ -31,7 +31,7 @@ class Y extends X {
 
     @Override
     protected void finalize() throws Throwable {
-        System.out.println("Y"+ (info == null ? "" : info));
+        System.out.println("Y" + (info == null ? "" : info));
         super.finalize();
     }
 }

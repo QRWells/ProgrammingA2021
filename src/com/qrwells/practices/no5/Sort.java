@@ -29,7 +29,7 @@ public class Sort {
     }
 
     static void sortArray(int[] a) {
-        mergeSort(a, 0, a.length-1);
+        mergeSort(a, 0, a.length - 1);
     }
 
     private static void mergeSort(int[] a, int s, int e) {

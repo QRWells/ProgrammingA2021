@@ -5,11 +5,10 @@
 
 package com.qrwells.practices.no8;
 
-public class ThreadYY implements Runnable{
+public class ThreadYY implements Runnable {
     @Override
     public void run() {
-        while (true)
-        {
+        while (true) {
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {

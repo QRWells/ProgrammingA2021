@@ -8,8 +8,7 @@ package com.qrwells.practices.no5;
 public class University {
     public Student[] students;
 
-    public void list()
-    {
+    public void list() {
         for (Student s : students)
             System.out.println(s.getName() + "は卒業できる: " + s.isOK());
     }

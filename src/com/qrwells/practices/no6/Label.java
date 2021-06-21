@@ -13,8 +13,7 @@ public class Label {
         this.caption = caption;
     }
 
-    public void output()
-    {
-        System.out.println(common+": "+caption);
+    public void output() {
+        System.out.println(common + ": " + caption);
     }
 }

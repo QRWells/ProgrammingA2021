@@ -8,7 +8,7 @@ package com.qrwells.practices.no5;
 public class UniversityTest {
     public static void main(String[] args) {
         University waseda = new University();
-        waseda.students = new Student[] {
+        waseda.students = new Student[]{
                 new Student("田中", 100),
                 new Student("山本", 50),
                 new Student("森", 68),

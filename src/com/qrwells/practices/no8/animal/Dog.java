@@ -5,7 +5,7 @@
 
 package com.qrwells.practices.no8.animal;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
     @Override
     public String say() {
         return "ワン";

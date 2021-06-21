@@ -8,13 +8,11 @@ package com.qrwells.practices.no6;
 public class Shop {
     public String name;
 
-    public Shop(String name)
-    {
-        this.name =  name;
+    public Shop(String name) {
+        this.name = name;
     }
 
-    public String sell()
-    {
+    public String sell() {
         return null;
     }
 }

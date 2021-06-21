@@ -3,10 +3,7 @@
  * Licensed under the MIT license. See LICENSE file in the project root for full license information.
  */
 
-package com.qrwells.practices.no8;/*
- * Copyright (c) Wang Qirui. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for full license information.
- */
+package com.qrwells.practices.no8;
 
 public class Factorial {
     public static int factorial1(int n) {
@@ -27,7 +24,7 @@ public class Factorial {
         if (n < 2) return 1;
         int result = 1;
         for (int i = 1; i <= n; i++) {
-            if (result > Integer.MAX_VALUE/i)
+            if (result > Integer.MAX_VALUE / i)
                 throw new RuntimeException();
             result *= i;
         }

@@ -8,7 +8,7 @@ package com.qrwells.practices.no7;
 public abstract class Element {
     public abstract void print();
 
-    public void add(Element e){
+    public void add(Element e) {
 
     }
 }
