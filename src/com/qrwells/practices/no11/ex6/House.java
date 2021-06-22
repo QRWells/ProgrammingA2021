@@ -25,7 +25,9 @@ public class House {
     }
 
     public void remove(IName member) {
-        size -= member.size();
-        members.remove(member);
+        if(members.remove(member))
+            size -= member.size();
+        else
+            throw new NoExistException();
     }
 }

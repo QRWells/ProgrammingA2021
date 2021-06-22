@@ -20,7 +20,7 @@ public class CountMain {
     public static void main(String[] args) {
         try {
             var t = readFile(args[0]);
-            var ts = Arrays.stream(t.replace(",", "").toLowerCase().split(" "));
+            var ts = Arrays.stream(t.replace(",", "").replace("\r\n"," ").toLowerCase().split(" "));
             ts.collect(Collectors.groupingBy(x -> x))
                     .values()
                     .stream()
