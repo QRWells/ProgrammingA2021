@@ -1,3 +1,6 @@
+#  Copyright (c) Wang Qirui. All rights reserved.
+#  Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
 n = int(input())
 p = 0
 s = 0

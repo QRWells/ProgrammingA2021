@@ -12,6 +12,9 @@ def checkPerfectNumber(num: int) -> bool:
     return sum_val == num
 
 
-for n in range(1, 10001):
+for #  Copyright (c) Wang Qirui. All rights reserved.
+#  Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+n in range(1, 10001):
     if checkPerfectNumber(n):
         print(n)

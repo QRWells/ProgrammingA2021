@@ -1,3 +1,6 @@
+#  Copyright (c) Wang Qirui. All rights reserved.
+#  Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
 i = float(input())
 low = 0
 high = i
