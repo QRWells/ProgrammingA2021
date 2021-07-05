@@ -1,0 +1,5 @@
+This book discusses methods of Programming in Python, with particular
+emphasis on Internet-related applications.  Python has grown with the
+Internet, and programmers across the planet was Python for all sorts of
+Internet applications, from the simplest CGI scripts, to complex server
+Programs, to extensions of the Python-based Grail browser.

@@ -1,0 +1,5 @@
+Soichiro Honda 2000 8 25
+Gontaro Nissan 2001 7 20
+Kazuo Hitachi 2002 9 22
+Saburo Hashiba 2004 10 3
+Wataru Ishibashi 2000 2 25
